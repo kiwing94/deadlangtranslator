@@ -1,78 +1,85 @@
 /* General styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #2C2F33;  /* Dark background */
-    color: white;
+    font-family: 'Arial', sans-serif;
+    background-color: #2C2F33;
+    color: #fff;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 100vh;
+    flex-direction: column;
 }
 
-/* Container for the whole form */
 .container {
-    background-color: #1B1E22;  /* Darker container background */
-    padding: 20px;
-    border-radius: 8px;
     width: 100%;
-    max-width: 500px;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+/* Navigation Bar */
+header nav {
+    display: flex;
+    justify-content: center;
+    background-color: #1B1E22;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li {
+    font-size: 18px;
+}
+
+header nav ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #e0b700;
+}
+
+/* Main Section */
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.translator-card {
+    background-color: #1B1E22;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;  /* Smaller width for a more compact box */
     text-align: center;
+    margin-bottom: 40px;
 }
 
-/* Heading style */
-h1 {
-    color: #FFA500;  /* Orange text for the title */
-    margin-bottom: 20px;
+.translator-card h1 {
+    color: #FFA500;
+    margin-bottom: 15px;  /* Reduced margin */
 }
 
-/* Form styles */
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 15px;  /* Reduced margin between form fields */
 }
 
 label {
     font-size: 16px;
-    margin-bottom: 8px;
     display: block;
-    color: #FFA500;  /* Orange text for labels */
-}
-
-select, input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: none;
-    border-radius: 4px;
-    background-color: #4F545C;  /* Dark form input fields */
-    color: white;
-    font-size: 14px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #FF6600;  /* Darker orange button */
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #e55d00;  /* Slightly darker orange when hovered */
-}
-
-/* Result section */
-#result {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #99cc00;  /* Light green color for the result */
-    text-align: left;
-}
-
-h3 {
-    font-size: 20px;
-    color: #FF6600;  /* Orange color for the result heading */
-}
+    color: #FFA500;
+    margin
