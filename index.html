@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-language Translator</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Multi-language Translator</h1>
+        <form method="POST" action="#">
+            <div>
+                <label for="from_lang">From Language:</label>
+                <select id="from_lang" name="from_lang">
+                    <option value="english">English</option>
+                    <option value="sanskrit">Sanskrit</option>
+                    <option value="koine">Koine Greek</option>
+                    <option value="latin">Latin</option>
+                    <option value="sumerian">Sumerian</option>
+                </select>
+            </div>
+            <div>
+                <label for="to_lang">To Language:</label>
+                <select id="to_lang" name="to_lang">
+                    <option value="sanskrit">Sanskrit</option>
+                    <option value="koine">Koine Greek</option>
+                    <option value="latin">Latin</option>
+                    <option value="sumerian">Sumerian</option>
+                    <option value="english">English</option>
+                </select>
+            </div>
+            <div>
+                <label for="word">Enter Word:</label>
+                <input type="text" id="word" name="word" required>
+            </div>
+            <button type="submit">Translate</button>
+        </form>
+
+        <div id="result">
+            <!-- Result will be displayed here after translation -->
+        </div>
+    </div>
+</body>
+</html>
